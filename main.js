@@ -11,6 +11,10 @@ class Main{
       let nuevaBase = new Base(objBase);
       recorrido.insertarBase(nuevaBase);
     })
+    document.querySelector("#btnBorrar").addEventListener("click", () => {
+      let borrar =document.querySelector("#borrar").value;
+      recorrido.borrarBase(borrar);
+    })
   }
 }
 let m = new Main();
